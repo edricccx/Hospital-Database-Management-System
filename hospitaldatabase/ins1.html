@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="Stylesheet" href="./style.css">
+
+<head>
+    <title>
+        hospital
+    </title>
+</head>
+
+<body>
+
+    <script src="jav.js"></script>
+    <h1>
+        Patient
+    </h1>
+
+
+    <button class="open-button" id="butt1" onclick="openForm()">INSERT</button>
+    <button class="open-button" id="butt6" onclick="openForm()">DELETE</button>
+
+    <button id="butt2" onclick="prolist()">SEARCH</button>
+    <div class="image" id="box">
+        <image style='height: 100%; width: 100%; object-fit: contain' src="./stet.png">
+
+    </div>
+    <!-- heres the pop up for adding new ps-->
+    <div class="form-popup2" id="addnew">
+        <form class="form-container">
+
+            <label for="name"><b>NAME</b></label>
+            <input id="nam" type="text" placeholder="Enter pro name" name="email" required>
+
+            <label for="prog"><b>COMPLETION</b></label>
+            <input id="comp" type="prog" placeholder="Enter COMPLETION" name="prog" required>
+
+            <button type="button" id="sub" class="btn" onclick="creatNew()">submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
